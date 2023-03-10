@@ -1,12 +1,23 @@
 package com.dio;
 
+import com.dio.model.Gato;
+
 public class ProjetoJava {
 
 	public static void main(String[] args) {
-		int a = 3;
-		int b = 2;
-		System.out.println("Hello World! " + (a+b));
+		
+		Gato gato = new Gato(null, null, null);
+		Livros livros = new Livros();
+		
+		System.out.println(gato);
+		System.out.println(livros);
+	
 
 	}
 
+}
+
+class Livros {
+	private String nome;
+	private String npag;
 }
